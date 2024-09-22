@@ -1,0 +1,113 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.login-form-section {
+    flex: 1; /* Make sure the form section takes half the width */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%; /* Restrict the form section to half the page */
+    background-color: #fff;
+}
+
+.login-header {
+    margin-bottom: 20px;
+}
+
+.login-logo {
+    width: 180px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.login-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #f85a40;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    background-color: #f85a40;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #ff6e57;
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-footer a {
+    color: #f85a40;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+.login-image-section {
+    flex: 1; /* Make sure the image section takes half the width */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; /* Restrict the image section to half the page */
+}
+
+.login-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.navbar {
+  background-color: #ff6f61;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 2rem; /* Meningkatkan ukuran logo */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800; /* Membuat font lebih tebal */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efek bayangan agar lebih menonjol */
+  letter-spacing: 1px; /* Menambahkan spasi antara huruf */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-item:hover {
+  color: #e55b0d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-menu {
+      display: none;
+  }
+
+  .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-menu-toggle {
+      display: block;
+      background-color: #ff6f61;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 10px;
+  }
+}
